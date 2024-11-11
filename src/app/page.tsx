@@ -1,101 +1,103 @@
+
 import Image from "next/image";
 
+import React from "react";
+import one from "../../public/one.jpeg"
+import living1 from "../../public/living1.jpeg"
+import living2 from "../../public/living2.jpeg"
+import living3 from "../../public/living3.jpeg"
+import living4 from "../../public/living4.jpeg"
+import bed1 from "../../public/bed1.jpeg"
+import bed2 from "../../public/bed2.jpeg"
+import bed3 from "../../public/bed3.jpeg"
+import bed4 from "../../public/bed4.jpeg"
+import k1 from "../../public/k1.jpeg"
+import k2 from "../../public/k2.jpeg"
+import k3 from "../../public/k3.jpeg"
+import k4 from "../../public/k4.jpeg"
+import home from "../../public/home.jpeg"
+import Link from "next/link";
+
+
+import Navbar from "@/app/components/Navbar";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div> < Navbar />
+        
+           
+      <div id="image2">
+  <Image src={one} alt="one"/>
+  <Image src={home} alt="home"/>
+<div id="image-text"> <h1><strong>HOUSE DECORATION </strong></h1></div>
+</div >
+     
+     
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+           < div>
+  <h1 id="home1" >
+Living Room</h1> </div>
+      <div id="livingroom">  
+
+
+      <div id="image-container">
+      <Image src={living1}alt="living1" width="250" height="180" />
+      <Image src={living2} alt="living2"width="250" height="180"/>
+      <Image src={living3} alt="living3"width="250" height="180"/>
+      <Image src={living4} alt="living4"width="250" height="180"/>
     </div>
-  );
+
+
+<div id="home2">
+  <h1>Bed Room</h1>
+</div>
+
+
+
+
+<div id="image-container">
+      <Image src={bed1}alt="living1" width="250" height="180" />
+      <Image src={bed2} alt="living2"width="250" height="180"/>
+      <Image src={bed3} alt="living3"width="250" height="180"/>
+      <Image src={bed4} alt="living4"width="250" height="180"/>
+    </div>
+
+
+<div id="home3"> Kitchen</div>
+
+
+<div id="image-container">
+      <Image src={k1}alt="living1" width="250" height="180" />
+      <Image src={k2} alt="living2"width="250" height="180"/>
+      <Image src={k3} alt="living3"width="250" height="180"/>
+      <Image src={k4} alt="living4"width="250" height="180"/>
+    </div>
+
+
+
+
+
+<button  id="button" type="button"><Link href="/">
+navigate to Home
+
+</Link> </button>
+
+
+
+
+<button  id="button" type="button"><Link href="/About">
+navigate to About
+
+</Link> </button>
+
+
+
+<button  id="button" type="button"><Link href="/Contact">
+navigate to Contact
+
+</Link> </button>
+
+
+     </div>     </div>
+  )
 }
+

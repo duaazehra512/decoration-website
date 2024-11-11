@@ -2,20 +2,643 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+ /* @media screen and (max-width: 768px) { 
+
+#navdiv{
+  display: flex; align-items: center; justify-content: space-evenly;
+  
+}
+ #navbar{
+  
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+font-weight: bold;
+
+
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+      font-size: 1.5rem;
+      font-weight: bold; 
+ }
+  
+ 
+ 
+
+#navbar ul li{
+  display: inline-block;
+  line-height: 80%;
+  
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+
+
+ #link{
+  margin-left: 20rem; 
+   
+
+ }
+ 
+  
+
+
+
+a.active,a:hover{
+  background:darkgoldenrod;
+  transition: 1s;
+}
+#home1{
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    font-size: 3.5rem;
+    font-weight: bold;
+    
+
+}
+#home1:hover{
+  background:darkgoldenrod;;
+  transition: 1s;
+}
+
+#home2{
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    font-size: 3.5rem;
+    font-weight: bold;
+    
+
+}
+#home2:hover{
+  background:darkgoldenrod;;
+  transition: 1s;
+}
+
+#home3{
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    font-size: 3.5rem;
+    font-weight: bold;
+    
+
+}
+#about1{
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    font-size: 3.5rem;
+    font-weight: bold
+}
+#about1:hover {
+  background:darkgoldenrod;;
+  transition: 1s;
+}
+
+
+#contact1{
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    font-size: 3.5rem;
+    font-weight: bold
+}
+
+
+
+#home3:hover{
+  background:darkgoldenrod;;
+  transition: 1s;
+}
+#image2{
+  position: relative;
+}
+#image2 img {
+  width:100%;
+  height: auto;
+  position: center;
+  ;
+}
+#image-text{ 
+
+  font-family:Arial, Helvetica, sans-serif;
+  border: 5px;
+  font-size:100;
+  text-align:center;
+  position:absolute ;
+  top: 50%;
+  color:darkgoldenrod;
+  left: 50%;
+text-size-adjust: 300%;
+transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+#image-container {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  border-radius: 20px;
+  border :4px ,solid,seagreen;
+  border-color: darkgoldenrod;
+  background-color:antiquewhite
+
+}
+
+#image-container img {
+  padding: 10px;
+  width: 200px; 
+  height: auto; 
+  border-radius: 20px; 
+  border: 4px, solid, #333;
+  
+}
+
+
+
+
+
+
+  #button {
+    background-color: rgb(146, 108, 11); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-left: 30px;
+  }
+
+  #back {
+    background-color: rgb(146, 108, 11); 
+    border:#333;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-left: 400px;
+    margin-right: 60px;
+  }
+
+
+
+
+#container1 {
+  text-align: center;
+  background-color:bisque;
+  border-radius: 15px;
+  margin :5px;
+    flex: 1;
+    max-width: 60%;
+    padding: 20px;
+    border: #333,solid 5px;
+}
+
+
+#h{
+  background-color: bisque;
+}
+
+
+
+
+#contact1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+
+#container3 {
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+}
+
+
+
+#container3 p {
+  font-size: 18px;
+  color: #555,darkgoldenrod;
+  margin-bottom: 20px;
+}
+
+
+
+
+#about2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+
+#container1 {
+  flex: 1;
+  max-width: 45%;
+  padding: 20px;
+}
+
+
+
+#container1 p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+ } */
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  margin-left: 20px;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+#navbar a.active, #navbar a:hover {
+  background: darkgoldenrod;
+  transition: 1s;
+}
+
+#home1, #home2, #home3, #about1, #contact1, #image-text {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  transition: 1s;
+}
+
+#home1:hover, #home2:hover, #home3:hover, #about1:hover, #contact1:hover, #image-text:hover {
+  background: darkgoldenrod;
+}
+
+#image-container {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-radius: 20px;
+  border: 4px solid darkgoldenrod;
+  background-color: antiquewhite;
+}
+
+#image-container img {
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  border: 4px solid #333;
+}
+
+#button, #back {
+  background-color: rgb(146, 108, 11);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+  margin-left: 30px;
+}
+
+#back {
+  margin-left: 400px;
+  margin-right: 60px;
+}
+
+#container1, #container3, #about2 {
+  text-align: center;
+  background-color: bisque;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 20px;
+}
+
+#container1, #container3 {
+  flex: 1;
+  max-width: 45%;
+}
+
+#container1 p, #container3 p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#contact1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Media Query for Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+
+  /* Navbar: Stack the items vertically and adjust padding */
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  /* Navbar links */
+  #navbar ul {
+    display: block;
+  }
+
+  #navbar ul li {
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  #navbar a {
+    font-size: 1.2rem;  /* Smaller font size for mobile */
+    padding: 8px;
+  }
+
+  /* Home sections: Adjust font sizes for mobile */
+  #home1, #home2, #home3, #about1, #contact1, #image-text {
+    font-size: 2rem;  /* Smaller font size on mobile */
+    padding: 1rem;
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* Image container: Stack images and adjust sizes */
+  #image-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;  /* Reduce gap between images */
+  }
+
+  #image-container img {
+    width: 100%;  /* Full width images */
+    max-width: 300px;  /* Max width for images */
+    height: auto;
+  }
+  
+  #image2{flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-radius: 20px;
+  border: 4px solid darkgoldenrod;
+  background-color: antiquewhite;
+}
+  }
+  #image2 img{
+    width: 100%;  /* Full width images */
+    max-width: 300px;  /* Max width for images */
+    height: auto;
+    padding: 10px;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  border: 4px solid #333;
+  }
+  /* Buttons: Make buttons take full width on mobile */
+  #button, #back {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+
+  /* Flex containers: Stack columns vertically */
+  #container1, #container3 {
+    max-width: 100%;
+    flex: 1 1 100%;  /* Make containers full width */
+    padding: 10px;
+  }
+
+  /* Adjust contact layout */
+  #contact1 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* Adjust about sections */
+  #about2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Make text inside container responsive */
+  #container1 p, #container3 p {
+    font-size: 1rem; /* Smaller text for mobile */
+  }
+
+  /* Hide certain large elements if needed */
+  /* #image-text {
+    color: #fff;
+    font-size: 1rem;  /* Smaller text for better fit */
+    /* text-size-adjust: 100%; */
+    /* background-color: #333; */
+  /* } */
+  /* #image-text:hover{ */
+    
+/* color: bisque;     */
+  /* }  */
+
+
+
+  /* Home sections: Center text and reduce font sizes */
+  #home1, #home2, #home3, #about1 {
+    font-size: 2.5rem;  /* Adjust font size for mobile */
+  }
+
+  /* Adjust logo or brand text size */
+  #navbar h1 {
+    font-size: 1.5rem; /* Adjust brand logo text size */
+  }
+
+
+
+/* Media Query for Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+
+  #navbar {
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  #navbar ul li {
+    margin: 10px;
+  }
+
+  #navbar a {
+    font-size: 1.2rem;
+  }
+
+  #home1, #home2, #home3, #about1, #contact1, #image-text {
+    font-size: 2.5rem;
+  }
+
+  #image-container img {
+    width: 100%;
+    max-width: 350px;  /* Slightly larger images on tablets */
+  }
+
+  #button, #back {
+    width: auto;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+
+  #container1, #container3 {
+    flex: 1 1 48%;
+    padding: 15px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+
+
+
+
+
+
+
+
+  
